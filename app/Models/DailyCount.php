@@ -13,7 +13,6 @@ class DailyCount extends Model
 
     public $timestamps = false;
 
-
     static function countToday(string $date)
     {
         return self::where('date',$date)->first();
